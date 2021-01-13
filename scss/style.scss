@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import "mixin";
+@import "colorfont";
+@import "reset";
+
+
+/*******************************************************************
+default
+********************************************************************/
+html,body,h1,h2,h3,h4,h5,h6,strong,table th,input,textarea,select,button{
+	font : {
+		family:$basic-font;
+		weight:400;
+		size:16px;
+	}
+	color:$basic-color;
+	letter-spacing:-.15px;
+}
+html,body{
+	height:100%;
+	min-width:320px;
+	position: relative;
+}
+input[type=button],input[type=text],input[type=image],input[type=submit],textarea,select{
+	appearance: none;
+}
+
+/*******************************************************************
+common
+********************************************************************/
+html {
+	font-size: 62.5%;background-color: #fff;
+}
+/* Form */
+button{overflow:visible;width:auto;margin:0;padding:0;border:none;background:none}
+input::-ms-clear{display:none}
+textarea{resize:none}
+a:link,a:visited,a:active,a:hover{text-decoration:none;cursor:pointer}
+
+*{box-sizing:border-box}
+.skipnav a{position:absolute;
+	top:-9999em;
+	z-index:9999;
+	width:100%;
+	background-color:#013874;
+	font-weight:bold;
+	color:#fff;
+	text-align:center
+}
+.skipnav a:hover,.skipnav a:active,.skipnav a:focus{
+	top:0;
+	padding:12px 0;
+	color:#fff
+}
+
+/*******************************************************************
+layout
+********************************************************************/
+.wrap {
+	@include center-layout;
+	padding: 50px 0;
+}
+.h1-title {
+	@include rfonts(32,32,700);
+}
+.section-list {
+	> dl {
+		border: 1px solid #efefef;
+		border-radius: 7px;
+		margin-top: 20px;
+		padding: 15px;
+		dt {
+			@include rfonts(21,21,700);
+			color: #333;
+		}
+		dd {
+			padding: 10px 0 0;
+		}
+	}
+}
+.summary-list {
+	line-height: 1.4;
+	margin-left: 5px;
+	li {
+		position: relative;
+		padding-left: 12px;
+		&:before {
+			content: '';
+			display: block;
+			width: 4px;
+			height: 4px;
+			border-radius: 2px;
+			background-color: #333;
+			position: absolute;
+			top: 9px;
+			left: 0px;
+		}
+	}
+}
+.link-url {
+	padding-top: 7px;
+	a {
+		color: #333;
+	}
+}
+.group-btns {
+	margin: 10px 0 0;
+}
+.btn-link {
+	display: inline-block;
+	background-color: #333;
+	border: 1px solid #333;
+	border-radius: 7px;
+	padding: 5px 10px 7px;
+	color: #fff;
+	&:hover {
+		background-color: #fff;
+		color: #333;
+	}
+}

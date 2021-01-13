@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*******************************************************************
+default
+********************************************************************/
+html, body, h1, h2, h3, h4, h5, h6, strong, table th, input, textarea, select, button {
+  font-family: "NanumBarunGothic", "나눔바른고딕", "맑은 고딕", "Malgun Gothic", Dotum, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #5d5d5d;
+  letter-spacing: -.15px;
+}
+
+html, body {
+  height: 100%;
+  min-width: 320px;
+  position: relative;
+}
+
+input[type=button], input[type=text], input[type=image], input[type=submit], textarea, select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/*******************************************************************
+common
+********************************************************************/
+html {
+  font-size: 62.5%;
+  background-color: #fff;
+}
+
+/* Form */
+button {
+  overflow: visible;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.skipnav a {
+  position: absolute;
+  top: -9999em;
+  z-index: 9999;
+  width: 100%;
+  background-color: #013874;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.skipnav a:hover, .skipnav a:active, .skipnav a:focus {
+  top: 0;
+  padding: 12px 0;
+  color: #fff;
+}
+
+/*******************************************************************
+layout
+********************************************************************/
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.h1-title {
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.section-list > dl {
+  border: 1px solid #efefef;
+  border-radius: 7px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.section-list > dl dt {
+  font-size: 21px;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 21px;
+  color: #333;
+}
+
+.section-list > dl dd {
+  padding: 10px 0 0;
+}
+
+.summary-list {
+  line-height: 1.4;
+  margin-left: 5px;
+}
+
+.summary-list li {
+  position: relative;
+  padding-left: 12px;
+}
+
+.summary-list li:before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #333;
+  position: absolute;
+  top: 9px;
+  left: 0px;
+}
+
+.link-url {
+  padding-top: 7px;
+}
+
+.link-url a {
+  color: #333;
+}
+
+.group-btns {
+  margin: 10px 0 0;
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 7px;
+  padding: 5px 10px 7px;
+  color: #fff;
+}
+
+.btn-link:hover {
+  background-color: #fff;
+  color: #333;
+}
+/*# sourceMappingURL=style.css.map */
